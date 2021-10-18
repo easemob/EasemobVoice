@@ -1,0 +1,122 @@
+PODS:
+  - AgoraLog (1.0.2):
+    - CocoaLumberjack (~> 3.6.1)
+  - AgoraRtcEngine_iOS (3.3.0)
+  - AgoraRte (1.0.0):
+    - AgoraLog (= 1.0.2)
+    - AgoraRtcEngine_iOS (= 3.3.0)
+    - AgoraRtm_iOS (= 1.4.2)
+    - AliyunOSSiOS
+    - Armin (= 1.0.6)
+    - SSZipArchive (= 2.2.3)
+    - YYModel (= 1.0.4)
+  - AgoraRtm_iOS (1.4.2)
+  - Alamofire (4.7.3)
+  - AliyunOSSiOS (2.10.10)
+  - Armin (1.0.6):
+    - Alamofire (~> 4.7.3)
+  - Bugly (2.5.90)
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
+  - Differentiator (4.0.1)
+  - FLAnimatedImage (1.0.16)
+  - HyphenateChat (3.8.6)
+  - InputBarAccessoryView (4.3.3):
+    - InputBarAccessoryView/Core (= 4.3.3)
+  - InputBarAccessoryView/Core (4.3.3)
+  - MBProgressHUD (1.1.0)
+  - MessageKit (3.1.1):
+    - InputBarAccessoryView (~> 4.3.0)
+  - MJRefresh (3.3.1)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SSZipArchive (2.2.3)
+  - SwiftyJSON (5.0.1)
+  - YYModel (1.0.4)
+  - ZLPhotoBrowser (4.1.9):
+    - ZLPhotoBrowser/Core (= 4.1.9)
+  - ZLPhotoBrowser/Core (4.1.9)
+
+DEPENDENCIES:
+  - AgoraRte (from `../AgoraRte/AgoraRte_Binary.podspec`)
+  - Bugly
+  - FLAnimatedImage
+  - HyphenateChat
+  - InputBarAccessoryView
+  - MBProgressHUD (= 1.1.0)
+  - MessageKit
+  - MJRefresh (= 3.3.1)
+  - RxCocoa
+  - RxDataSources
+  - RxSwift (= 5.0.1)
+  - SwiftyJSON
+  - ZLPhotoBrowser
+
+SPEC REPOS:
+  trunk:
+    - AgoraLog
+    - AgoraRtcEngine_iOS
+    - AgoraRtm_iOS
+    - Alamofire
+    - AliyunOSSiOS
+    - Armin
+    - Bugly
+    - CocoaLumberjack
+    - Differentiator
+    - FLAnimatedImage
+    - HyphenateChat
+    - InputBarAccessoryView
+    - MBProgressHUD
+    - MessageKit
+    - MJRefresh
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SSZipArchive
+    - SwiftyJSON
+    - YYModel
+    - ZLPhotoBrowser
+
+EXTERNAL SOURCES:
+  AgoraRte:
+    :path: "../AgoraRte/AgoraRte_Binary.podspec"
+
+SPEC CHECKSUMS:
+  AgoraLog: b0eb6ed816b29e411dc14dc2171fe5912a8a141f
+  AgoraRtcEngine_iOS: 1a0adbf959ab5175b700c8bab30b1346fc27ef1a
+  AgoraRte: 3aa91fd5afbd8fef89974e4a0482a751f698cdb4
+  AgoraRtm_iOS: 5fb55028ec41659a8d88bebecc5c95a742102d4f
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AliyunOSSiOS: b8f1dfc229cd9abf68c8ee0cb245c2d66e00dd96
+  Armin: e88b3b6d407fb0e7161efdb62f82aa5f1f56dc07
+  Bugly: 88bc32c0acc6fef7b74d610f0319ee7560d6b9fe
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
+  HyphenateChat: 636732028b36d578732eec228cf40fd4df7ee46b
+  InputBarAccessoryView: 8e7fc09e9cba75e0fee5da13450e15c194806f69
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MessageKit: a3e612a54a24f5d9ca0295760749b481afd3f2da
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  ZLPhotoBrowser: 320aec37f64b0f58d40abd852956c64530011ea4
+
+PODFILE CHECKSUM: f37a57c06fa3b151baa15a25c08b15aa895bc467
+
+COCOAPODS: 1.10.1
