@@ -1,43 +1,24 @@
-# 环信语聊房-EasemobVoice
 
-*English | [中文](README.zh.md)*
+# 环信语聊房_EasemobVoice
 
-## Prerequisites
+## 项目介绍
+基于环信 IM + 声网 RTC 实现的多人语音聊天室场景。
+支持创建房间，上下麦，送礼物，声音美声，空间音效，表情图片文字聊天等，满足泛娱乐社交、语音相亲、情感陪护房、语音电台等在线 FM、KTV语聊房、连麦开黑等纯音频社交互动解决方案。
 
-- Xcode 10.0+
-- Physical iOS device (iPhone)
-- iOS simulator is supported
+## 核心功能
 
-## Quick Start
+**主播/房间管理员**：
+创建房间、邀请上麦、麦位管理、设置静音或取消静音；
+房间设置：语聊美声、歌唱美声、音色变换
+音效设置：
+- 空间塑造：KTV、演唱会、录音棚、留声机、虚拟立体声、空旷、空灵、3D人声 
+ - 变声音效：大叔、老男人、小男孩、小姐姐、小女孩、猪八戒、绿巨人
+  - 曲风音效：R&B、流行、摇滚、嘻哈 
+  - 电音音效：大调、小调、和风、选择起始音阶 播放房间背景音乐、切换房间背景
 
-This section shows you how to prepare, build, and run the application.
+**听众端**：加入房间、举手上麦、赠送礼物、房间切换；
 
-### Download AgoraRte Framework
+[环信语聊房Demo体验](https://www.easemob.com/download/demo)
 
-Download [AgoraRte](https://github.com/AgoraIO-Usecase/AgoraVoice/releases/download/ios_1.1.0/AgoraRte.framework.zip), unzip and move "AgoraRte.framework" to "AgoraVoice-iOS/AgoraRte".
-
-### Obtain keys
-
-1. Create a developer account at [agora.io](https://dashboard.agora.io/signin/). Once you finish the signup process, you will be redirected to the Dashboard.
-2. Create a project, and get An **AppId**, a **CustomerId**, a **customerCertificate**. 
-3. Use **AppId**, **CustomerId**, **customerCertificate** to update "Keys" file.
-
-### Run
-
-1. Into "AgoraVoice-iOS/AgoraVoice" path, use "pod install" command to link all dependent frameworks and libs.
-  
-2. Open "AgoraVoice.xcworkspace", connect your iPhone device and run the project. Ensure a valid provisioning profile is applied or your project will not run.
-
-## Contact Us
-
-- For potential issues, take a look at our [FAQ](https://docs.agora.io/en/faq) first
-- Dive into [Agora SDK Samples](https://github.com/AgoraIO) to see more tutorials
-- Take a look at [Agora Use Case](https://github.com/AgoraIO-usecase) for more complicated real use case
-- Repositories managed by developer communities can be found at [Agora Community](https://github.com/AgoraIO-Community)
-- You can find full API documentation at [Document Center](https://docs.agora.io/en/)
-- If you encounter problems during integration, you can ask question in [Stack Overflow](https://stackoverflow.com/questions/tagged/agora.io)
-- You can file bugs about this sample at [issue](https://github.com/AgoraIO-Usecase/AgoraVoice/issues)
-
-## License
-
-The MIT License (MIT)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/8dcd1eb1d78f4e32bb979b018cfd817e.jpg#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/175a0a13895e43b58f1fc3d1c5f23d62.jpg#pic_center)
