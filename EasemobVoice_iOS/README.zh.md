@@ -1,7 +1,5 @@
 # Easemob Voice iOS
 
-*中文*
-
 ## 先决条件
 - Xcode 10.0+
 - 物理 iOS 设备 (iPhone)
