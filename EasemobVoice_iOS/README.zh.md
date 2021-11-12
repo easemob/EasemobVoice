@@ -1,3 +1,45 @@
+先决条件
+Xcode 10.0+
+物理 iOS 设备 (iPhone)
+支持iOS模拟器
+快速开始
+本节向您展示如何准备、构建和运行应用程序。
+
+下载 AgoraRte 框架
+下载AgoraRte，解压并移动“AgoraRte.framework”到“AgoraVoice-iOS/AgoraRte”。
+
+获取密钥
+在agora.io创建一个开发者账户。完成注册过程后，您将被重定向到仪表板。
+创建一个项目，并获取一个AppId，一个CustomerId，一个customerCertificate。
+使用AppId、CustomerId、customerCertificate更新“密钥”文件。
+跑
+进入“EasemobVoice-iOS/EasemobVoice”路径，使用“pod install”命令链接所有依赖的框架和库。
+
+打开“AgoraVoice.xcworkspace”，连接你的iPhone设备并运行项目。确保应用了有效的配置文件，否则您的项目将无法运行。
+
+联系我们
+对于潜在问题，请先查看我们的常见问题解答
+深入Agora SDK Samples查看更多教程
+查看Agora 用例以获得更复杂的实际用例
+开发者社区管理的仓库可以在Agora 社区找到
+您可以在文档中心找到完整的 API 文档
+如果在集成过程中遇到问题，可以在Stack Overflow 中提问
+您可以提交有关此问题示例的错误
+执照
+麻省理工学院许可证 (MIT)
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Agora Voice iOS
 
 *[English](README.md) | 中文*
