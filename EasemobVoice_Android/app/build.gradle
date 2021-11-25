@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    signingConfigs {
+        release {
+            storeFile file('azure_keystore_file')
+            storePassword 'azureKeystorePassword'
+            keyAlias = 'azure_keystore_alias'
+            keyPassword 'azureKeystorePassword'
+        }
+    }
+
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    defaultConfig {
+        applicationId "io.agora.agoravoicedemo"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1000
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'io.hyphenate:hyphenate-chat:3.8.5'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    def navigation_version = "2.3.2"
+    def retrofit_version = "2.9.0"
+    def okhttp_logging_version = "4.7.2"
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.13.1'
+
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation "androidx.navigation:navigation-fragment:$navigation_version"
+    implementation "androidx.navigation:navigation-ui:$navigation_version"
+    implementation "androidx.navigation:navigation-fragment:$navigation_version"
+    implementation "androidx.navigation:navigation-ui:$navigation_version"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    implementation ("com.github.bumptech.glide:glide:4.11.0") {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor "com.github.bumptech.glide:compiler:4.11.0"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_logging_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    implementation 'com.elvishew:xlog:1.7.2'
+    implementation 'com.github.AgoraIO-Usecase:Tools:log_java_1.0.4'
+
+
+    //ViewModel and LiveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    api 'com.trello.rxlifecycle3:rxlifecycle:3.1.0'
+    api 'com.trello.rxlifecycle3:rxlifecycle-components:3.1.0'
+    api 'com.trello.rxlifecycle3:rxlifecycle-android-lifecycle:3.1.0'
+
+//    implementation 'io.agora.rtc:full-sdk:3.4.6'
+//    implementation 'io.agora.rtm:rtm-sdk:1.4.6'
+    implementation 'com.github.agorabuilder:native-full-sdk:3.4.6'
+    implementation 'com.github.agorabuilder:rtm-sdk:1.4.6'
+
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.9.4'
+
+    implementation 'cn.leancloud:storage-android:8.1.4'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+//    implementation 'com.tencent.bugly:crashreport:latest.release'
+//    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+}

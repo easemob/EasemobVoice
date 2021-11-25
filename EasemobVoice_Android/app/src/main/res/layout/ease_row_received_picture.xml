@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:cmui_maskimage="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="3dp">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/message_list_item_background">
+
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_3"
+            android:layout_toRightOf="@id/tv_userid"
+            android:padding="@dimen/margin_1">
+
+            <io.agora.agoravoice.im.message.ChatImage
+                android:id="@+id/image"
+                style="@style/cmui_chat_image_style"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                cmui_maskimage:cmui_image="@drawable/ease_default_image"
+                cmui_maskimage:cmui_mask="@drawable/ease_default_image"
+                />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_userid"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:text="@string/about_title"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

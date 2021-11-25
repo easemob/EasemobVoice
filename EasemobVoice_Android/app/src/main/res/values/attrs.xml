@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EaseEmojiconMenu">
+        <attr name="bigEmojiconRows" format="integer"/>
+        <attr name="emojiconColumns" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="cmui_MaskImage">
+
+        <!-- Identifier for the image that represents the Imageview's content. -->
+        <attr name="cmui_image" format="reference" />
+        <!-- crop Imageview's content same as mask -->
+        <attr name="cmui_mask" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseChatMessageList">
+        <attr name="msgListMyBubbleBackground" format="reference"/>
+        <attr name="msgListOtherBubbleBackground" format="reference"/>
+        <attr name="msgListShowUserAvatar" format="boolean"/>
+        <attr name="msgListShowUserNick" format="boolean"/>
+    </declare-styleable>
+</resources>

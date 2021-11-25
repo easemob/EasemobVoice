@@ -1,0 +1,379 @@
+<resources>
+    <string name="app_name" translatable="false">EasemobVoice</string>
+    <string name="button_send">发送</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="emojicon_test_name">示例</string>
+
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_prefix">[语音]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="video_call">[视频通话]</string>
+    <string name="dynamic_expression">[动态表情]</string>
+
+    <string name="app_id" translatable="false"></string>
+    <string name="customer_id" translatable="false"></string>
+    <string name="customer_certificate" translatable="false"></string>
+
+    <!--    <string name="bugly_app_id" translatable="false"><##BUGLYl_APP_ID##></string>-->
+
+    <string name="powered_by_agora" translatable="false">Powered by easemob LTD</string>
+
+    <!-- Main Activity -->
+    <string name="main_navigation_home">Home</string>
+    <string name="main_navigation_profile">My Profile</string>
+
+    <string name="main_start_chat">Start</string>
+
+    <string name="scene_type_chat_room">Chatroom</string>
+
+    <!-- Profile -->
+    <string name="profile_setting_title_nickname">Nickname</string>
+    <string name="profile_setting_title_about">About</string>
+    <string name="profile_edit_avatar_title">Select Avatar</string>
+    <string name="profile_edit_nickname_title">Input</string>
+
+    <string name="text_cancel">Cancel</string>
+    <string name="text_done">Done</string>
+    <string name="text_confirm">Confirm</string>
+    <string name="text_accept">Accept</string>
+    <string name="text_reject">Reject</string>
+    <string name="text_upgrade">Upgrade</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_leave">Leave</string>
+
+    <string name="about_title">About</string>
+    <string name="privacy_policy_title">Privacy</string>
+    <string name="privacy_website_link">https://www.easemob.com/protocol</string>
+
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_content">&#160;&#160;&#160;&#160;Easemob Voice ("this product") is a test product provided by Easemob.
+        Easemob enjoys the copyright and ownership of this product. It is hereby granted free of charge to anyone who obtains
+        a copy of this product and related documentation (hereinafter referred to as "software") to try the software without limitation,
+        including but not limited to trial, copy, modify, merge, publish, distribute, but this product shall not be used
+        For any commercial use, you may not sublicense and/or sell copies of the software.\n\n &#160;&#160;&#160;&#160;
+        This product is provided "as is" without any express warranty, including but not limited to guarantees of suitability,
+        suitability for specific purposes, and non-infringement. Whether it is due to any contract, infringement or other forms
+        of conduct related to this product or the trial of this product or other methods, Easemob will not be responsible for any claims,
+        damages or other liabilities.\n\n &#160;&#160;&#160;&#160;You are free to choose whether to try the services provided by this product.
+        If you download, install, or try the services provided in this product, it means that you trust the owner of the product,
+        and Easemob shall not be responsible for any form of loss or injury caused by yourself or others when you try the services
+        provided in this product for any reason.</string>
+
+    <string name="sign_up_agora_title">Easemob Account</string>
+    <string name="sign_up_website_link">https://console.easemob.com/user/register</string>
+
+    <string name="version_title">Easemob Voice Version</string>
+    <string name="release_date_title">Release Date</string>
+    <string name="release_date" translatable="false">2021.9.30</string>
+    <string name="rte_sdk_version_title">SDK Version</string>
+    <string name="upload_log_title">Upload log</string>
+    <string name="upload_log_success_message_format">Log id %s copied into the clipboard</string>
+    <string name="upload_log_fail_message_format">Log upload fails: %s</string>
+
+    <string name="official_website" translatable="false">www.easemob.com</string>
+
+    <!-- Policies -->
+    <string name="room_restriction_policy">This is a testing product. Please refrain from using it commercially. The max duration per session is 10 minutes, and the max number of participants per channel is 10. </string>
+
+    <string name="permission_not_granted">Necessary permissions not granted</string>
+
+    <!-- Nickname Edit -->
+    <string name="profile_name_edit_hint">Input nickname&#8230;</string>
+    <string name="profile_name_edit_message_empty">Nickname cannot be blank</string>
+    <string name="profile_name_edit_message_success">Nickname updated</string>
+    <string name="profile_name_edit_message_fail">Nickname update fails</string>
+    <string name="profile_name_edit_message_same">Same nickname</string>
+    <string name="profile_name_too_long_toast_message">Nickname cannot exceed %d characters</string>
+
+    <!-- Prepare Activity -->
+    <string name="live_prepare_hint">Channel Name</string>
+    <string name="go_live">Go Live</string>
+    <string name="room_name_too_long_toast_format">Maximum length of channel name is %d</string>
+    <string name="no_room_name_toast">Channel name cannot be blank</string>
+    <string name="create_room_fail">Fails to create a room %d %s</string>
+
+    <string name="send_empty_message">Empty messages are not sent</string>
+
+    <string-array name="random_channel_names">
+        <item>Cheer</item>
+        <item>Vibe</item>
+        <item>Devine</item>
+        <item>Duo</item>
+        <item>Ablaze</item>
+        <item>Amaze</item>
+        <item>Harmony</item>
+        <item>Verse</item>
+        <item>Vigilant</item>
+        <item>Contender</item>
+        <item>Vista</item>
+        <item>Wander</item>
+        <item>Collections</item>
+        <item>Moon</item>
+        <item>Boho</item>
+        <item>Everest</item>
+    </string-array>
+
+    <string-array name="random_surnames">
+        <item>Atkinson</item>
+        <item>Edwards</item>
+        <item>Gibson</item>
+        <item>Holmes</item>
+        <item>Kelvin</item>
+        <item>Lloyd</item>
+        <item>Payne</item>
+        <item>White</item>
+    </string-array>
+
+    <string-array name="random_names">
+        <item>Alexander</item>
+        <item>Halley</item>
+        <item>Rickey</item>
+        <item>Xavior</item>
+        <item>Yolanda</item>
+        <item>Corynn</item>
+        <item>Daniel</item>
+        <item>Kelly</item>
+        <item>Lauren</item>
+    </string-array>
+
+    <!-- Components -->
+    <string name="room_bottom_bar_input_hint">Say something &#8230;</string>
+
+    <string name="live_system_notification_member_joined">joined channel</string>
+    <string name="live_system_notification_member_left">left channel</string>
+    <string name="co_hosting_occupied">becomes a co-host</string>
+    <string name="co_hosting_left">becomes an audience</string>
+
+    <string name="live_message_gift_send">gives %s</string>
+
+    <string name="rtc_starts_property_format">Audio tx channels: %d %nAudio tx sampleRate: %d</string>
+    <string name="rtc_stats_format">Audio tx bitrate: %.2f kbps%nAudio tx packet loss rate: %.2f%% %nAudio rx bitrate: %.2f kbps%nAudio rx packet loss rate: %.2f%% %nDelay: %d ms</string>
+
+    <!-- Action Sheets -->
+    <string name="action_sheet_background_title">Background</string>
+
+    <string name="action_sheet_voice_beauty_title">Voice Beautifier</string>
+    <string name="action_sheet_voice_beauty_type_title_1">Chat Beautifier</string>
+    <string name="action_sheet_voice_beauty_type_title_2">Singing Beautifier</string>
+    <string name="action_sheet_voice_beauty_type_title_3">Timbre Transformation</string>
+
+    <string-array name="voice_beauty_chat_names">
+        <item>Magnetic</item>
+        <item>Fresh</item>
+        <item>Vitality</item>
+    </string-array>
+
+    <string-array name="voice_beauty_sing_names">
+        <item>Hall (Male)</item>
+        <item>Large Room (Male)</item>
+        <item>Small Room (Male)</item>
+        <item>Hall (Female)</item>
+        <item>Large Room (Female)</item>
+        <item>Small Room (Female)</item>
+    </string-array>
+
+    <string-array name="voice_beauty_sing_names_simple">
+        <item>Man</item>
+        <item>Woman</item>
+    </string-array>
+
+    <string-array name="voice_beauty_timbre">
+        <item>Vigorous</item>
+        <item>Deep</item>
+        <item>Mellow</item>
+        <item>Falsetto</item>
+        <item>Full</item>
+        <item>Clear</item>
+        <item>Resounding</item>
+        <item>Ringing</item>
+    </string-array>
+
+    <string name="action_sheet_sound_effect_title">Sound Effect</string>
+    <string-array name="action_sheet_sound_effect_types">
+        <item>Room Acoustics</item>
+        <item>Voice Changer Effect</item>
+        <item>Style Transformation</item>
+        <item>Pitch Correction</item>
+        <item>Magic Tone</item>
+    </string-array>
+
+    <string-array name="action_sheet_sound_effect_space_names">
+        <item>KTV</item>
+        <item>Vocal Concert</item>
+        <item>Studio</item>
+        <item>Phonograph</item>
+        <item>Virtual Stereo</item>
+        <item>Spacial</item>
+        <item>Ethereal</item>
+        <item>3D Voice</item>
+    </string-array>
+
+    <string-array name="action_sheet_sound_effect_change_names">
+        <item>Uncle</item>
+        <item>Old Man</item>
+        <item>Boy</item>
+        <item>Sister</item>
+        <item>Girl</item>
+        <item>Pig King</item>
+        <item>Hulk</item>
+    </string-array>
+
+    <string-array name="action_sheet_sound_effect_style_names">
+        <item>R&#38;B</item>
+        <item>Popular</item>
+        <item>Rock</item>
+        <item>HipHop</item>
+    </string-array>
+
+    <string name="action_sheet_sound_effect_enable_electronic_voice">Enable Electronic Voice</string>
+    <string name="action_sheet_sound_effect_electronic_mode_hint">Select Mode</string>
+    <string name="action_sheet_sound_effect_electronic_key_hint">Select the starting key</string>
+
+    <string-array name="action_sheet_sound_effect_electronic_keys">
+        <item>Major</item>
+        <item>Minor</item>
+        <item>Japanese\nPantatonic</item>
+    </string-array>
+
+    <string-array name="action_sheet_sound_effect_electronic_tones">
+        <item>A</item>
+        <item>Bb</item>
+        <item>B</item>
+        <item>C</item>
+        <item>Dd</item>
+        <item>D</item>
+        <item>Eb</item>
+        <item>E</item>
+        <item>F</item>
+        <item>Gb</item>
+        <item>G</item>
+        <item>Ab</item>
+    </string-array>
+
+    <string name="action_sheet_3d_voice_title">3D Voice</string>
+    <string name="action_sheet_3d_voice_description">Speed adjustment controls the speed of sound rotation (The fastest is 60 rpm, the slowest is 1 rpm) </string>
+    <string name="action_sheet_3d_voice_text_min">Min</string>
+    <string name="action_sheet_3d_voice_text_max">Max</string>
+
+    <string name="action_sheet_sound_effect_magic_notes_coming_soon">Coming Soon</string>
+
+    <string name="action_sheet_tool_title">Tool</string>
+
+    <string-array name="action_sheet_tool_audience">
+        <item>Statistics</item>
+    </string-array>
+
+    <string-array name="action_sheet_tool_host">
+        <item>Monitor</item>
+        <item>Statistics</item>
+    </string-array>
+
+    <string-array name="action_sheet_tool_owner">
+        <item>Monitor</item>
+        <item>Background Music</item>
+        <item>Background</item>
+        <item>Statistics</item>
+    </string-array>
+
+    <string-array name="action_sheet_gift_names">
+        <item>Bell</item>
+        <item>Ice Cream</item>
+        <item>Wine</item>
+        <item>Cake</item>
+        <item>Ring</item>
+        <item>Watch</item>
+        <item>Diamond</item>
+        <item>Rocket</item>
+    </string-array>
+
+    <string name="action_sheet_gift_title">Gift</string>
+    <string name="action_sheet_gift_send">Send</string>
+    <string name="gift_action_sheet_value_format">(%d Coins)</string>
+
+    <string name="action_sheet_music_title">Music</string>
+    <string name="action_sheet_music_credit_hint">Music:&#160;&#160;</string>
+    <string name="action_sheet_music_credit_link">https://www.bensound.com</string>
+
+    <string name="action_sheet_user_list_title">Users</string>
+    <string name="action_sheet_user_list_type_all">All</string>
+    <string name="action_sheet_user_list_type_apply">Request</string>
+    <string name="action_sheet_user_list_inviting">Inviting</string>
+    <string name="action_sheet_user_list_invite">Invite</string>
+
+    <string-array name="action_sheet_seat_operations">
+        <item>Open</item>
+        <item>Close</item>
+        <item>Invite</item>
+        <item>Request</item>
+        <item>Mute</item>
+        <item>Unmute</item>
+        <item>End</item>
+        <item>End</item>
+    </string-array>
+
+    <string name="action_sheet_seat_operate_mute">Mute</string>
+    <string name="action_sheet_seat_operate_unmute">Unmute</string>
+
+    <!-- Network status detection -->
+    <string name="network_unavailable">Network error - Cannot connect to network now, please try later</string>
+    <string name="network_switch_to_wifi">You are in WIFI network</string>
+    <string name="network_switch_to_mobile">Use cellular data instead of WIFI， May incur data charges</string>
+
+    <string name="scene_empty_list_hint">Create a channel to start</string>
+    <string name="scene_server_error">No data, please try later</string>
+    <string name="scene_no_connection_title">Network error</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_leave_room_title_host">Leave Channel?</string>
+    <string name="dialog_leave_room_message_host">This will end the session.</string>
+    <string name="dialog_owner_end_live_title">Live streaming ends</string>
+    <string name="dialog_owner_end_live_message">Do you want to end this live session?</string>
+    <string name="dialog_invite_user_title">Co-hosting invitation to %s? </string>
+    <string name="dialog_receive_invite_message">Do you accept the invitation to become a co-host？</string>
+    <string name="dialog_leave_seat_message_owner">Stop %s from co-hosting?</string>
+    <string name="dialog_leave_seat_message_host">Stop co-hosting?</string>
+    <string name="dialog_lock_seat_title">Close seat?</string>
+    <string name="dialog_lock_seat_message">Co-hosting fails if the seat is occupied</string>
+    <string name="dialog_unlock_seat_title">Open seat?</string>
+    <string name="dialog_application_accepted_title">Do you accept %s\'s request?</string>
+    <string name="dialog_application_rejected_title">Do you reject %s\'s request?</string>
+    <string name="dialog_application_title">Request co-hosting?</string>
+    <string name="dialog_mute_title">Mute %s?</string>
+    <string name="dialog_unmute_title">Unmute %s?</string>
+    <string name="dialog_upgrade_recommend_title">Recommend upgrade</string>
+    <string name="dialog_upgrade_recommend_message">You are recommended to upgrade Agora Voice for new features.</string>
+    <string name="dialog_upgrade_force_title">Forced upgrade</string>
+    <string name="dialog_upgrade_force_message">You must upgrade to use Agora Voice</string>
+
+    <!-- Toasts -->
+    <string name="toast_invite_success">Invitation sent</string>
+    <string name="toast_invite_timeout">Invitation timeout</string>
+    <string name="toast_repeat_invite">%s has been invited recently</string>
+    <string name="toast_request_fail_message">%s, error code: %d</string>
+    <string name="toast_invite_fail">Invitation failed, error code %d</string>
+    <string name="toast_invite_accept">%s accepted co-hosting invitation</string>
+    <string name="toast_invite_rejected">%s rejected co-hosting invitation</string>
+    <string name="toast_apply_accepted">Co-hosting request approved</string>
+    <string name="toast_apply_rejected">Co-hosting request rejected</string>
+    <string name="toast_user_has_taken_seat">The user you invited is a host.</string>
+    <string name="toast_force_leave_by_owner">The host changes your role to audience</string>
+    <string name="toast_application_sent">Co-hosting request sent</string>
+    <string name="toast_no_wired_mic_plugged">Plug in a headset</string>
+    <string name="toast_join_class_fail">Join room failed</string>
+    <string name="toast_room_end_timeout">The max duration per session is 10 minutes</string>
+    <string name="toast_room_end_owner_leave">Live streaming ends</string>
+    <string name="toast_room_end">Room Ends</string>
+    <string name="toast_app_version_fail">Acquire app version fail</string>
+    <string name="toast_link_empty">The link address is empty</string>
+
+    <!-- Error Messages -->
+    <string name="error_no">OK</string>
+    <string name="error_seat_taken">Seat is occupied. Please try another seat</string>
+    <string name="error_room_max_user">This product is for test purpose only, each room can only have 10 users at most</string>
+    <string name="error_room_not_exist">Room dos not exist</string>
+    <string name="error_no_connection">Connection lost. Please try later</string>
+    <string name="operation_fail">Operation fails</string>
+</resources>

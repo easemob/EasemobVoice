@@ -1,0 +1,71 @@
+<resources>
+    <style name="agora_voice_base_dialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <style name="nav_title_text">
+        <item name="android:textSize">@dimen/text_size_1</item>
+    </style>
+
+    <style name="gift_anim_window">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="dialog_center" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:windowBackground">@color/black_90_percent_transparent</item>
+    </style>
+
+    <style name="action_sheet_seek_bar">
+        <item name="android:minHeight">@dimen/action_sheet_music_volume_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/action_sheet_music_volume_progress_bar_height</item>
+        <item name="android:progressDrawable">@drawable/setting_progress</item>
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+    </style>
+
+    <style name="action_sheet_music_seek_bar" parent="action_sheet_seek_bar">
+        <item name="android:max">100</item>
+    </style>
+
+    <style name="ease_chat_input_button_size">
+        <item name="android:layout_width">34dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textColor">@color/btn_gray_normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 聊天图片样式 -->
+    <style name="cmui_chat_image_style">
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:maxWidth">200dp</item>
+        <item name="android:maxHeight">250dp</item>
+        <item name="android:minHeight">100dp</item>
+        <item name="android:minWidth">100dp</item>
+    </style>
+
+    <style name="cmui_AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+</resources>
