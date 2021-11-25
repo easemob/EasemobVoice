@@ -1,10 +1,10 @@
-# Easemob Voice Android
+# EasemobVoice_Android
 
 ## 开始前，请确保你的开发环境满足如下条件：
 - Android Studio 4.0.0 或以上版本。
 - Android 4.4 或以上版本的设备。部分模拟机可能无法支持本项目的全部功能，所以推荐使用真机。
 
-##操作步骤
+## 操作步骤
 
 ### 获取示例项目
 前往 GitHub 下载或克隆 EasemobVoice 示例项目。
@@ -18,16 +18,17 @@
 
 替换环信CLIENT_ID和CLIENT_SECRET：将src/main/java/io/agora/agoravoice/im/service/IMService.java 第14--15行CLIENT_ID和CLIENT_SECRET的值换成自己的
 
-#### 注册Agora
+### 注册Agora
 前往 [agora.io](https://dashboard.agora.io/signin/) 注册项目，替换src/main/res/values/strings.xml 第15--17行 app_id、customer_id和customer_certificate
 
-#### 数据存储
+### 数据存储
 Leanclould
 前往 Leancloud官网 注册项目，生产 appId、appKey、server_url。
 替换工程 src/main/java/io/agora/agoravoice/AgoraApplication.java  第57行
 
 
-### 运行示例项目
+## 运行示例项目
+
 - 开启 Android 设备的开发者选项，通过 USB 连接线将 Android 设备接入电脑。
 
 - 在 Android Studio 中，点击 Sync Project with Gradle Files 按钮，同步项目。
