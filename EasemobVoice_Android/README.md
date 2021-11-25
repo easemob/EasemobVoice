@@ -7,7 +7,7 @@
 ## 操作步骤
 
 ### 获取示例项目
-前往 GitHub 下载或克隆 EasemobVoice_Android 示例项目。
+前往 GitHub 下载或克隆 [EasemobVoice_Android](https://github.com/easemob/EasemobVoice) 示例项目.
 
 ### 注册环信
 前往[环信官网](https://console.easemob.com/user/register)注册项目，生成appKey 替换工程app中AndroidManifest.xml里配置的appkey
