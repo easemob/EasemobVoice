@@ -17,7 +17,7 @@
 
 ### 获取声网Keys
 1. 在[agora.io](https://dashboard.agora.io/signin/)创建一个开发者账号。
-2. 创建一个项目,  然后获取一组 **AppId**, **CustomerId**, **customerCertificate**。 
+2. 创建一个项目,  然后获取一组 **AppId**, **CustomerId**（头像-RESTful API-客户 ID）, **customerCertificate**。 
 
 ### 更新Keys文件
 用环信的 **orgName**, **appName**, **clientID**, **clientSecret** 和声网的 **AppId**, **CustomerId**, **customerCertificate** 去更新 "Keys" 文件。
