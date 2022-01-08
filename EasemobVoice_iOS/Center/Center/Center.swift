@@ -48,32 +48,44 @@ class Center: RxObject {
 
 extension Center {
     func registerAndLogin() {
-        appAssistant.checkMinVersion()
-        appAssistant.updateNotification.subscribe(onNext: { [unowned self] (update) in
-            func privateRegisterAndLogin() {
-                if let current = CurrentUser.local() {
-                    self.current = current
-                    self.login(user: current.info.value) { [unowned self] in
-                        self.isWorkNormally.accept(true)
-                    }
-                    return
-                }
-                
-                self.register { [unowned self] (info: BasicUserInfo) in
-                    self.current = CurrentUser(info: info)
-                    self.login(user: info)
-                }
+        if let current = CurrentUser.local() {
+            self.current = current
+            self.login(user: current.info.value) { [unowned self] in
+                self.isWorkNormally.accept(true)
             }
-            
-            switch update {
-            case .noNeed:
-                privateRegisterAndLogin()
-            case .advise:
-                privateRegisterAndLogin()
-            case .need:
-                self.isWorkNormally.accept(false)
-            }
-        }).disposed(by: bag)
+            return
+        }
+        
+        self.register { [unowned self] (info: BasicUserInfo) in
+            self.current = CurrentUser(info: info)
+            self.login(user: info)
+        }
+//        appAssistant.checkMinVersion()
+//        appAssistant.updateNotification.subscribe(onNext: { [unowned self] (update) in
+//            func privateRegisterAndLogin() {
+//                if let current = CurrentUser.local() {
+//                    self.current = current
+//                    self.login(user: current.info.value) { [unowned self] in
+//                        self.isWorkNormally.accept(true)
+//                    }
+//                    return
+//                }
+//
+//                self.register { [unowned self] (info: BasicUserInfo) in
+//                    self.current = CurrentUser(info: info)
+//                    self.login(user: info)
+//                }
+//            }
+//
+//            switch update {
+//            case .noNeed:
+//                privateRegisterAndLogin()
+//            case .advise:
+//                privateRegisterAndLogin()
+//            case .need:
+//                self.isWorkNormally.accept(false)
+//            }
+//        }).disposed(by: bag)
     }
 }
 
@@ -115,12 +127,10 @@ private extension Center {
                     debugPrint("register em account failed. \(err)")
                     return
                 }
-                // 需要再登录一下
-                if let err = EMClient.shared().login(withUsername: userId, password: BasicUserInfo.password) {
-                    debugPrint("login em account failed. \(err)")
-                    return
+                // 需要退出登录一下
+                EMClient.shared().logout(true) { _ in
+                    success(info)
                 }
-                success(info)
             }
         }
         let response = ArResponse.json(successCallback)
@@ -155,9 +165,6 @@ private extension Center {
                 }
                 success?()
             }
-            // RTE Login
-            self.rteLogin(userId: user.userId, success: success)
-        
         }
         
         let response = ArResponse.json(successCallback)
