@@ -20,7 +20,7 @@
 
 ### 注册Agora
 前往 [agora.io](https://dashboard.agora.io/signin/) 注册项目。
-然后获取一组 AppId, CustomerId（头像-RESTful API-客户 ID）, customerCertificate。替换src/main/res/values/strings.xml 第15--17行 app_id、customer_id和customer_certificate
+然后获取一组 AppId, CustomerId（头像-RESTful API-客户 ID）, customerCertificate（头像-RESTful API-客户密钥）。替换src/main/res/values/strings.xml 第15--17行 app_id、customer_id和customer_certificate
 
 ### 数据存储
 Leanclould
