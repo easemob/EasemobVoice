@@ -19,7 +19,8 @@
 替换环信CLIENT_ID和CLIENT_SECRET：将src/main/java/io/agora/agoravoice/im/service/IMService.java 第14--15行CLIENT_ID和CLIENT_SECRET的值换成自己的
 
 ### 注册Agora
-前往 [agora.io](https://dashboard.agora.io/signin/) 注册项目，替换src/main/res/values/strings.xml 第15--17行 app_id、customer_id和customer_certificate
+前往 [agora.io](https://dashboard.agora.io/signin/) 注册项目。
+然后获取一组 AppId, CustomerId（头像-RESTful API-客户 ID）, customerCertificate。替换src/main/res/values/strings.xml 第15--17行 app_id、customer_id和customer_certificate
 
 ### 数据存储
 Leanclould
