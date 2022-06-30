@@ -27,6 +27,47 @@
 
 打开[EasemobVoice.xcworkspace](https://github.com/easemob/EasemobVoice/tree/dev/EasemobVoice_iOS/EaseMobVoice/EaseMobVoice.xcworkspace)，连接你的iPhone设备并运行项目。确保应用了有效的配置文件，否则您的项目将无法运行。
 
+## 关于 EaseMobVoice pod install 问题？
+
+从 github 下载或者clone 的原始项目，执行 pod install 之前不能删除原始的 ‘Podfile.lock’ 文件！
+
+直接执行 pod install 。
+
+pod 安装完成之后，打开 ‘EaseMobVoice.xcworkspace’ ，build 之后会有报错！
+
+解决方式：
+
+​		1、Xcode 打开文件 ‘ArUtils.swift’  
+
+<img src="/Users/zchong/Library/Application Support/typora-user-images/image-20220629164016482.png" alt="image-20220629164016482" style="zoom:50%;" />
+
+​		将报错处进行如下替换：
+
+```swift
+struct OptionsDescription {
+    static func any<T>(_ any: T?) -> String where T : CustomStringConvertible {
+        return any != nil ? any!.description : "nil"
+    }
+}
+```
+
+​		2、Xcode 打开文件 ‘AGELog.swift’
+
+<img src="/Users/zchong/Library/Application Support/typora-user-images/image-20220629164443334.png" alt="image-20220629164443334" style="zoom:50%;" />
+
+​		将报错处进行如下替换：
+
+```swift
+struct OptionsDescription {
+    static func any<T>(_ any: T?) -> String where T : CustomStringConvertible {
+        return any != nil ? any!.description : "nil"
+    }
+}
+```
+
+修改两处报错之后，再次进行编译即可。
+
+
 ## 联系我们
 
 - 如果你遇到了困难，可以先参阅 [常见问题](https://docs-im.easemob.com/)
