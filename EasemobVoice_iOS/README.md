@@ -39,7 +39,7 @@ pod 安装完成之后，打开 ‘EaseMobVoice.xcworkspace’ ，build 之后�
 
 ​		1、Xcode 打开文件 ‘ArUtils.swift’  
 
-<img src="/https://www.imgeek.org/uploads/article/20220704/dd5095c332b97866612c5a1271c799e6.jpeg" alt="image-20220629164016482" style="zoom:50%;" />
+<img src="https://www.imgeek.org/uploads/article/20220704/dd5095c332b97866612c5a1271c799e6.jpeg" alt="image-20220629164016482" style="zoom:50%;" />
 
 ​		将报错处进行如下替换：
 
