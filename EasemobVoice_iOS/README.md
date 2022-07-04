@@ -39,7 +39,7 @@ pod 安装完成之后，打开 ‘EaseMobVoice.xcworkspace’ ，build 之后�
 
 ​		1、Xcode 打开文件 ‘ArUtils.swift’  
 
-<img src="/Users/zchong/Library/Application Support/typora-user-images/image-20220629164016482.png" alt="image-20220629164016482" style="zoom:50%;" />
+<img src="/https://www.imgeek.org/uploads/article/20220704/dd5095c332b97866612c5a1271c799e6.jpeg" alt="image-20220629164016482" style="zoom:50%;" />
 
 ​		将报错处进行如下替换：
 
@@ -53,7 +53,7 @@ struct OptionsDescription {
 
 ​		2、Xcode 打开文件 ‘AGELog.swift’
 
-<img src="/Users/zchong/Library/Application Support/typora-user-images/image-20220629164443334.png" alt="image-20220629164443334" style="zoom:50%;" />
+<img src="https://www.imgeek.org/uploads/article/20220704/5a84ee6e023c6a4353212869b28108ee.jpeg" alt="image-20220629164443334" style="zoom:50%;" />
 
 ​		将报错处进行如下替换：
 
